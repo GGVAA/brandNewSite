@@ -615,30 +615,38 @@ h6 {
 display: none;
  }
  .mobile__menu{
-     /* display: block;
+     display: block;
      border:1px solid white;
      height:40px;
     width:40px;
     min-width: 40px;
-    min-height: 40px; */
-    display: block;
-    position:absolute;
-    height: 896px;
-    width: 375px;
-    background-color: #00856f;
-    top:0;
-    left:-24px;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+
+   
  }
  .imgBurger{
   width:40px;
   height:40px;
   transition-duration: 1s;
-  display: none;
+
  }
  .mobileLogo{
   height: 17.3px;
 width: 132.8px;
 
+ }
+ .logoDaggerContainer{
+  width:375px;display: flex;
+  justify-content: space-between;
+  padding: 10px;
+ }
+ .mobile__icons{
+  display: flex;
+  justify-content: space-between;
  }
  .mobile__menu:hover{
   position:absolute;
