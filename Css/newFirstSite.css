@@ -204,6 +204,28 @@ h6 {
   padding-top: 84px;
   display: flex;
   flex-direction: column;
+  position:relative;
+}
+.popUp{
+
+  width:600px;
+  height:300px;
+
+  position:absolute;
+  background-color:#00856f;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left:100px;
+  display: none;
+}
+.popUp input{
+  margin:25px;
+  width:250px;
+  height:50px;
+  font-size: 25px;border-radius: 15px;
 }
 .welcome__span {
   font-family: "DM-sans-regular";
@@ -618,16 +640,16 @@ display: none;
      display: block;
      border:1px solid white;
      height:40px;
-    width:40px;
-    min-width: 40px;
-    min-height: 40px;
-    overflow: hidden;
-    display: flex;
+     width:40px;
+     min-width: 40px;
+     min-height: 40px;
+     overflow: hidden;
+     display: flex;
     flex-direction: column;
   align-items: center;
-
-   
  }
+   
+
  .imgBurger{
   width:40px;
   height:40px;
@@ -648,7 +670,7 @@ width: 132.8px;
   display: flex;
   justify-content: space-between;
  }
- .mobile__menu:hover{
+ .mobile__menu__changed{
   position:absolute;
   height: 896px;
   width: 375px;
@@ -656,9 +678,7 @@ width: 132.8px;
   top:0;
   left:-24px;
  }
- .mobile__menu:hover .imgBurger{
-  display: none;
- }
+
  .menu__list__mobile{
   display: flex;
     justify-content: center;
@@ -679,7 +699,7 @@ width: 132.8px;
   .welcome__container {
     width: 375px;
     height: 1079px;
-    border: 1px solid black;
+
     flex-direction: column;
   }
   .welcome__container__left {
@@ -688,8 +708,22 @@ width: 132.8px;
     padding-top: 40px;
     align-items: center;
   }
+  .popUp {
+    width: 336px;
+    height: 300px;
+    position: absolute;
+    background-color: #00856f;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 20px;
+    display: none;
+  }
   .welcome__span {
-    margin-bottom: 16px;
+    margin-bottom: 21px;
+    margin-top: 1px;
   }
   .welcome__heading {
     font-size: 34px;
@@ -753,6 +787,7 @@ width: 132.8px;
   .section__service {
     width: 375px;
     height: 2034px;
+    margin-top: -45px;
   }
 
   .service__container {
@@ -760,11 +795,12 @@ width: 132.8px;
     width: 327px;
   }
   .service__container__box_list {
-    height: 470px;
-    width: 390px;
+    margin-top: -3px;
+    height: 457px;
+    width: 379px;
   }
   .service__title {
-    padding-top: 16px;
+    
     width: 314px;
     height: 117px;
     font-style: normal;
@@ -795,6 +831,7 @@ width: 132.8px;
     width: 327px;
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 42px;
   }
   .about__us__title {
     width: 327px;
@@ -821,7 +858,7 @@ width: 132.8px;
   }
 
   .about__us__container__left {
-    padding-top: 60px;
+    padding-top: 3px;
     height: 373px;
   }
   .about__us__container__right {
@@ -837,6 +874,7 @@ width: 132.8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    padding-top: 21px;
   }
 
   .section__contacts {
@@ -869,6 +907,7 @@ width: 132.8px;
     line-height: 39px;
     text-align: left;
     margin-bottom: 32px;
+    margin-top: 5px;
   }
   .lower__button {
     margin-top: 32px;
@@ -901,4 +940,11 @@ width: 132.8px;
   .footer__text2 {
     padding-top: 12px;
   }
-}
+  .contacts__img__envelope {
+    
+    padding-bottom: 7px;}
+
+  }
+
+
+

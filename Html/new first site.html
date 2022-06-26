@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="stylesheet" href="../Css/newFirstSite.css" />
   </head>
   <body>
@@ -31,14 +30,15 @@
               </li>
             </ul>
           </nav>
-          <nav class="mobile__menu">
-            <div class="imgBurger">
-              <img src="../Img/burger.svg" alt="burger">
+          <button class="button button__header">Agendar consulta</button>
+          <nav id="mobileMenu"   class="mobile__menu">
+            <div id="burger" class="imgBurger">
+              <img   src="../Img/burger.svg" alt="burger">
               </div>
               
                  <div class="logoDaggerContainer">
                   <img class="mobileLogo" src="../Img/LOGO_for_footer.png" alt="Logo" />
-                   <img src="../Img/dagger.svg" alt="dagger" />
+                   <img id="dagger" src="../Img/dagger.svg" alt="dagger" />
                   </div>
               
           
@@ -64,7 +64,7 @@
              </div>
             </div>
           </nav>
-          <button class="button button__header">Agendar consulta</button>
+        
         </div>
       </div>
     </header>
@@ -82,10 +82,15 @@
               <br />
               raiz de sua doença e proporcionar uma cura a longo prazo.
             </p>
-            <button class="welcome__button_green">
+            <button id="call" class="welcome__button_green">
               <img class="welcome__button__img" src="../Img/path4.png" alt="" />
               <p>Agende sua consulta</p>
             </button>
+            <form id="popUp" class="popUp">
+                <legend>White your number!</legend>
+                <input type="number">
+                <button>Send Number</button>
+            </form>
           </div>
           <div class="welcome__container__right">
             <img src="../Img/girl.png" alt="girl" />
@@ -300,5 +305,6 @@
         </div>
       </div>
     </footer>
+    <script src="../Js/newFirstSite.js"></script>
   </body>
 </html>
