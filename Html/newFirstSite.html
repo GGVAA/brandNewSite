@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../Css/newFirstSite.css" />
+    <link rel="stylesheet" href="../Css/newFirstSiteMobile.css">
+    <link rel="stylesheet" href="">
   </head>
-  <body>
-    <header class="header">
+  <body id="body">
+    <header class="header" id="header">
       <div class="container__header">
         <div class="header__inner">
-          <a class="logo" href="#">
-            <img class="logo__img"   src="../Img/Logo .png" alt="Logo" />
+          <a  class="logo" href="#">
+            <!-- <img class="logo__img"   src="../Img/Logo .png" alt="Logo" /> -->
           </a>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link"  href="#">Início</a>
+                <a class="menu__link"  href="#firstHyper">Início</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Sobre</a>
+                <a class="menu__link" href="#secondHyper">Sobre</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Serviços</a>
+                <a class="menu__link" href="#thirdHyper">Serviços</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Depoimentos</a>
+                <a class="menu__link" href="#fourthHyper">Depoimentos</a>
               </li>
             </ul>
-          </nav>
-          <button class="button button__header">Agendar consulta</button>
+          </nav> 
+          <button id="menuCall" class="button button__header">Agendar consulta</button>
           <nav id="mobileMenu"   class="mobile__menu">
             <div id="burger" class="imgBurger">
               <img   src="../Img/burger.svg" alt="burger">
@@ -43,20 +45,20 @@
               
           
                 <ul class="menu__list__mobile">
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Início</a>
+                  <li  class="menu__item ">
+                    <a class="menu__link  mobile__menu__item" href="#firstHyper">Início</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="#">Sobre</a>
+                    <a class="menu__link mobile__menu__item" href="#secondHyper">Sobre</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="#">Serviços</a>
+                    <a class="menu__link mobile__menu__item" href="#thirdHyper">Serviços</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="#">Depoimentos</a>
+                    <a class="menu__link mobile__menu__item" href="#fourthHyper">Depoimentos</a>
                   </li>
                 </ul>
-                <button class="button">Agendar consulta</button>
+                <button id="burgerCall" class="button">Agendar consulta</button>
              <div class="mobile__icons">
               <img class="instImg"  src="../Img/inst.svg" alt="inst">
               <img class="facebbokImg" src="../Img/facebook.svg" alt="facebook">
@@ -69,10 +71,16 @@
       </div>
     </header>
     <main class="main">
+      <form id="popUp" class="popUp">
+        <legend class="popUp_legend">White your number!</legend>
+        <input type="number">
+        <button id="send">Send Number</button>
+        <div id="popUpDagger" class="popUpDagger"><img src="../Img/dagger.svg" alt="dagger" ></div>
+    </form>
       <section class="section__welcome">
         <div class="container welcome__container">
           <div class="welcome__container__left">
-            <span class="welcome__span">BOAS-VINDAS A DOCTORCARE👋</span>
+            <a name="firstHyper" class="welcome__span">BOAS-VINDAS A DOCTORCARE👋</a>
             <h1 class="welcome__heading">
               Assistência médica <br />
               simplificada para todos
@@ -86,11 +94,7 @@
               <img class="welcome__button__img" src="../Img/path4.png" alt="" />
               <p>Agende sua consulta</p>
             </button>
-            <form id="popUp" class="popUp">
-                <legend>White your number!</legend>
-                <input type="number">
-                <button>Send Number</button>
-            </form>
+
           </div>
           <div class="welcome__container__right">
             <img src="../Img/girl.png" alt="girl" />
@@ -117,7 +121,7 @@
       </section>
       <section class="section__service">
         <div class="container service__container">
-          <span class="welcome__span section__span">SERVIÇOS</span>
+          <a name="secondHyper" class="welcome__span section__span">SERVIÇOS</a>
           <h2 class="service__title title">
             Como podemos ajudá-lo a se sentir melhor?
           </h2>
@@ -217,7 +221,7 @@
             />
           </div>
           <div class="about__us__container__right">
-            <div class="about__us__span welcome__span">SOBRE NÓS</div>
+            <a name="thirdHyper" class="about__us__span welcome__span">SOBRE NÓS</a>
             <div class="about__us__title title">
               Entenda quem somos e por que existimos
             </div>
@@ -237,9 +241,9 @@
       <section class="section__contacts">
         <div class="contacts__sections">
           <div class="contacts__container__left">
-            <div class="contacts__title title">
+            <a name="fourthHyper" class="contacts__title title">
               Entre em contato <br />com a gente!
-            </div>
+            </a>
             <div class="contacts__block__address block-text__text">
               <div class="contacts__img__envelope">
                 <div class="contacts__img__rectangle">
@@ -263,7 +267,7 @@
                 </div>
                 <div class="block-text__addrres">contato@doctorcare.com</div>
               </div>
-              <button class="welcome__button_green lower__button">
+              <button id="call2" class="welcome__button_green lower__button">
                 <img
                   class="welcome__button__img"
                   src="../Img/path4.png"

@@ -39,7 +39,6 @@ a:focus,
 a:active {
   outline: none;
 }
-
 nav,
 footer,
 header,
@@ -47,18 +46,14 @@ aside {
   display: block;
 }
 
-html,
 body {
-  height: 3461px;
-  width: 100%;
-  margin: 0 auto;
+ height: 3461px;
+  width: 100%; 
+ margin: 0 auto; 
   line-height: 1;
   font-size: 16px;
   font-weight: 400;
   font-family: "DM-sans-regular";
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   color: #000;
 }
 input,
@@ -90,7 +85,6 @@ ul li {
 img {
   vertical-align: top;
 }
-
 h1,
 h2,
 h3,
@@ -110,6 +104,9 @@ h6 {
   width: 100%;
   z-index: 1;
 }
+.headerScroll{
+  background-color: #00856f;
+}
 .container__header {
   margin: 0 auto;
   width: 1120px;
@@ -126,6 +123,13 @@ h6 {
 }
 .logo {
   margin-right: 256px;
+  background-image: url(../Img/Logo.png);
+  height: 18px;
+width: 139px;
+
+}
+.logoOnScroll {
+  background-image: url(../Img/logoOnScroll.svg);
 }
 .mobile__menu{
   display: none;
@@ -158,7 +162,14 @@ h6 {
   color: rgba(0, 133, 111, 1);
   font-weight: 700;
 }
+.menu__link__scroll {
+  color: #F7F9F9;
+}
+.menu__link__scroll:focus {
+  border-bottom: 1px solid  #F7F9F9;
+  color: #F7F9F9;
 
+}
 .button {
   border-radius: 20px;
   border: 1px solid #00856f;
@@ -177,7 +188,12 @@ h6 {
 }
 .button:hover {
   border: 1px solid #00856f;
-  color: white;
+  color: #dce9e2;
+  background-color: #00856f;
+}
+.buttonScroll{
+  border: 1px solid #dce9e2;
+  color: #dce9e2;
   background-color: #00856f;
 }
 .main {
@@ -207,25 +223,43 @@ h6 {
   position:relative;
 }
 .popUp{
-
-  width:600px;
-  height:300px;
-
-  position:absolute;
+  width:400px;
+  height:250px;
+  top:100px;
+  left: calc(50% - 200px);
+  position: relative;
+  position:fixed;
   background-color:#00856f;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  left:100px;
+  z-index: 1;
   display: none;
+}
+.popUpDagger{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width:30px;
+  height:30px;
+}
+
+#send{
+  color:white;
+  background-color: #00856f;
+  border-radius: 10px;
+  padding: 10px;
+  border:1px solid white;
 }
 .popUp input{
   margin:25px;
   width:250px;
-  height:50px;
-  font-size: 25px;border-radius: 15px;
+  /* height:50px; */
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 0 10px;
 }
 .welcome__span {
   font-family: "DM-sans-regular";
@@ -284,7 +318,6 @@ h6 {
   background-color: rgba(0, 69, 58, 1);
   border: 1px solid rgba(0, 69, 58, 1);
 }
-
 .welcome__container__right {
   height: 100%;
   width: 40%;
@@ -301,7 +334,6 @@ h6 {
   background: #fffaf1;
   border: 1px solid #dce9e2;
   border-radius: 6px;
-
   margin: auto;
 }
 .info__body {
@@ -358,13 +390,11 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
-
 .section__span {
   display: flex;
   justify-content: space-around;
   margin-bottom: 21px;
 }
-
 .title {
   font-family: "DM-sans-regular";
   font-style: normal;
@@ -374,7 +404,6 @@ h6 {
   text-align: center;
   color: #212529;
 }
-
 .service__list {
   display: flex;
   flex-wrap: wrap;
@@ -407,7 +436,6 @@ h6 {
 .service__list__box:hover {
   transform: scale(1.2);
 }
-
 .service__circle {
   position: relative;
   height: 24px;
@@ -426,7 +454,6 @@ h6 {
   border-bottom: 2px solid #00856f;
   border-right: 2px solid #00856f;
 }
-
 .list__title {
   font-family: "DM-sans-regular";
   font-style: normal;
@@ -452,14 +479,12 @@ h6 {
   height: 734px;
   background-color: #fffaf1;
 }
-
 .about_us__container {
   height: 100%;
   width: 1120px;
   margin: 0 auto;
   display: flex;
 }
-
 .about__us__container__left {
   padding-top: 160px;
 }
@@ -472,14 +497,12 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
 }
-
 .about__us__span {
   text-align: center;
   line-height: 150%;
   letter-spacing: 0.1em;
   margin-bottom: 12px;
 }
-
 .about__us__title {
   text-align: left;
   height: 104px;
@@ -489,7 +512,6 @@ h6 {
   line-height: 52px;
   letter-spacing: 0.9px;
 }
-
 .about__us__text {
   height: 168px;
   width: 573px;
@@ -514,7 +536,6 @@ h6 {
   width: 1120px;
   display: flex;
 }
-
 .contacts__container__left {
   display: flex;
   flex-direction: column;
@@ -554,7 +575,6 @@ h6 {
   left: 0px;
   padding-bottom: 40px;
 }
-
 .contacts__container__right {
   padding-top: 160px;
   width: 52%;
@@ -577,7 +597,6 @@ h6 {
 .footer__container__left {
   padding-top: 80px;
 }
-
 .footer__text {
   padding-top: 23px;
   font-family: DM-sans-regular;
@@ -586,7 +605,6 @@ h6 {
   line-height: 18px;
   color: #fffaf1;
 }
-
 .footer__text2 {
   padding-top: 15px;
 }
@@ -611,340 +629,9 @@ h6 {
   height: 24px;
   margin: 20px;
 }
-@media screen and (max-width: 1205px) {
-  body {
-    width: 375px;
-  }
-  .header {
-    width: 375px;
-  }
-  .header__container {
-    width: 375px;
-  }
-  .container__header{
-    width:375px;
-  }
-  .header__inner{
-    width:327px;
-    height:72px;
-    margin: 0 auto;
-    position:relative;
-  }
-  .logo {
-    margin-right: 154px;
- }
- .menu{
-display: none;
- }
- .mobile__menu{
-     display: block;
-     border:1px solid white;
-     height:40px;
-     width:40px;
-     min-width: 40px;
-     min-height: 40px;
-     overflow: hidden;
-     display: flex;
-    flex-direction: column;
-  align-items: center;
- }
-   
 
- .imgBurger{
-  width:40px;
-  height:40px;
-  transition-duration: 1s;
-
- }
- .mobileLogo{
-  height: 17.3px;
-width: 132.8px;
-
- }
- .logoDaggerContainer{
-  width:375px;display: flex;
-  justify-content: space-between;
-  padding: 10px;
- }
- .mobile__icons{
-  display: flex;
-  justify-content: space-between;
- }
- .mobile__menu__changed{
-  position:absolute;
-  height: 896px;
-  width: 375px;
-  background-color: #00856f;
-  top:0;
-  left:-24px;
- }
-
- .menu__list__mobile{
-  display: flex;
-    justify-content: center;
-    flex-direction:column ;
-    align-items: center;
-    color: white;
- }
- .menu__list__mobile a{
-  color:white;
- }
- .button__header{
-  display:none; 
- }
-  .section__welcome {
-    width: 375px;
-    height: 1079px;
-  }
-  .welcome__container {
-    width: 375px;
-    height: 1079px;
-
-    flex-direction: column;
-  }
-  .welcome__container__left {
-    width: 375px;
-    height: 486px;
-    padding-top: 40px;
-    align-items: center;
-  }
-  .popUp {
-    width: 336px;
-    height: 300px;
-    position: absolute;
-    background-color: #00856f;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    left: 20px;
-    display: none;
-  }
-  .welcome__span {
-    margin-bottom: 21px;
-    margin-top: 1px;
-  }
-  .welcome__heading {
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-align: center;
-    width: 327px;
-    height: 132px;
-  }
-  .welcome__text {
-    width: 314px;
-    height: 108px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: center;
-    line-break: auto;
-  }
-  .welcome__container__right {
-    width: 375px;
-    height: 593px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .welcome__container__right img {
-    height: 340.7px;
-    width: 261.6px;
-  }
-  .info__container {
-    top: 825px;
-    left: 24px;
-    height: 470px;
-    width: 327px;
-    border-radius: 6px;
-  }
-  .info__body {
-    width: 375px;
-    height: 470px;
-    padding-top: 0;
-  }
-  .info__column {
-    flex-direction: column;
-    justify-content: space-around;
-    width: 327px;
-    height: 470px;
-    padding-left: 0px;
-    padding-top: 0px;
-  }
-  .info__item {
-    min-width: 327px;
-    width: 327px;
-    border-right: none;
-  }
-  .last__item {
-    margin-left: 0px;
-  }
-
-  .section__service {
-    width: 375px;
-    height: 2034px;
-    margin-top: -45px;
-  }
-
-  .service__container {
-    height: 470px;
-    width: 327px;
-  }
-  .service__container__box_list {
-    margin-top: -3px;
-    height: 457px;
-    width: 379px;
-  }
-  .service__title {
-    
-    width: 314px;
-    height: 117px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-    text-align: center;
-    color: #212529;
-  }
-  .section__span {
-    padding-top: 100px;
-  }
-  .service__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 24px;
-  }
-  .section__about_us {
-    width: 375px;
-    height: 969px;
-  }
-  .about_us__container {
-    height: 960px;
-    width: 327px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 42px;
-  }
-  .about__us__title {
-    width: 327px;
-    height: 78px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-  }
-
-  .about__us__happy-doctor__img {
-    width: 327px;
-    height: 282px;
-  }
-
-  .section__contacts {
-    width: 375px;
-    height: 735px;
-  }
-  .contacts__sections {
-    width: 375px;
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  .about__us__container__left {
-    padding-top: 3px;
-    height: 373px;
-  }
-  .about__us__container__right {
-    height: 587px;
-    width: 327px;
-    margin: 0 auto;
-    padding-top: 100px;
-    padding-left: 0px;
-  }
-  .about__us__text {
-    width: 327px;
-    height: 288px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    padding-top: 21px;
-  }
-
-  .section__contacts {
-    width: 375px;
-    height: 735px;
-  }
-  .contacts__sections {
-    width: 327px;
-    height: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-  }
-  .contacts__container__left {
-    width: 100%;
-    height: 422px;
-    padding-top: 100px;
-  }
-  .contacts__container__right {
-    width: 100%;
-    height: 313px;
-    padding-top: 0px;
-    margin-left: 3px;
-  }
-  .contacts__title {
-    width: 297px;
-    height: 78px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-    text-align: left;
-    margin-bottom: 32px;
-    margin-top: 5px;
-  }
-  .lower__button {
-    margin-top: 32px;
-  }
-  .contacts__happy__men {
-    width: 324px;
-    height: 213px;
-    margin: 0 auto;
-  }
-  .footer {
-    width: 375px;
-    height: 285px;
-  }
-  .container__footer {
-    width: 323px;
-    height: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-  }
-  .footer__container__left {
-    height: 169px;
-    width: 100%;
-    padding-top: 60px;
-  }
-  .footer__container__right {
-    height: 116px;
-    width: 100%;
-    padding-top: 34px;
-  }
-  .footer__text2 {
-    padding-top: 12px;
-  }
-  .contacts__img__envelope {
-    
-    padding-bottom: 7px;}
-
-  }
-
-
+.popUp_legend {
+  color: white;
+  margin:0px;
+}
 
