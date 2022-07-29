@@ -33,7 +33,6 @@ menuCall.addEventListener('click',()=>{
     burgerButton.style.display = 'block';
 })
 
-
 let popUp = document.getElementById('popUp');
 popUpDagger.addEventListener('click',()=>{
     popUp.style.display = 'none';
@@ -42,9 +41,6 @@ sendButton.addEventListener('click',()=>{
     popUp.style.display = 'none';
 })
 
-sendButton.addEventListener('click',()=>{
-    popUp.style.display = 'none';
-})
 callBtn2.addEventListener('click',()=>{
     popUp.style.display = 'flex';
 })

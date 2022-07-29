@@ -125,7 +125,7 @@ h6 {
   margin-right: 256px;
   background-image: url(../Img/Logo.png);
   height: 18px;
-width: 139px;
+  width: 139px;
 
 }
 .logoOnScroll {
@@ -256,7 +256,6 @@ width: 139px;
 .popUp input{
   margin:25px;
   width:250px;
-  /* height:50px; */
   font-size: 16px;
   border-radius: 15px;
   padding: 0 10px;
